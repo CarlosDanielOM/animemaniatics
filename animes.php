@@ -3,7 +3,7 @@
 
     header("Access-Control-Allow-Origin: *");
 
-   /*  if (strtoupper($_SERVER['REQUEST_METHOD']) != 'POST') {
+    if (strtoupper($_SERVER['REQUEST_METHOD']) != 'POST') {
         throw new Exception('Only POST requests are allowed');
     }
 
@@ -11,7 +11,7 @@
     $content_type = isset($_SERVER['CONTENT_TYPE']) ? $_SERVER['CONTENT_TYPE'] : '';
     if (stripos($content_type, 'application/json') === false) {
     throw new Exception('Content-Type must be application/json');
-    } */
+    }
     
     $body = file_get_contents("php://input");
     $req = json_decode($body, true);
