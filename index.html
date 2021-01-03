@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let anime = {
+            "options": {
+                "action": "create",
+                "object": "anime"
+            },
+            "name": "Kamisama Ni Natta Hi",
+            "img": "https://th.bing.com/th/id/OIP.-HMf6f9Ea1O64YTnTiqFvQHaKf?pid=Api&rs=1",
+            "description": "Anime about a loli God!",
+            "caption": "Loli God",
+            "status": "Emision",
+            "release_date": "December 9th, 2020",
+            "ended": "current",
+            "episodes": 10,
+            "bg_img": null,
+            "type": "anime",
+            "tags": "comedy, romance, action",
+            "ENG_name": "The day I became a God.",
+            "hiragana_name": "神様になった日",
+            "second_ENG_name": null
+        }
+        let ajax = new XMLHttpRequest();
+        ajax.open('POST', "http://localhost/animemaniatics/animes.php", true);
+        ajax.send(JSON.stringify(anime));
+        ajax.onreadystatechange = () => {
+            if (ajax.readyState === 4 && ajax.status === 200) {
+                console.log({
+                    res: ajax.responseText,
+                    parse_res: JSON.parse(ajax.responseText)
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
