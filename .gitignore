@@ -1,0 +1,4 @@
+#Ignore Rest api files
+src/api/REST
+
+node_modules
