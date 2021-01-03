@@ -80,4 +80,10 @@ class animeController {
         $status = Functions::checkIfFinished('animes', $id);
         return ['anime' => $status];
     }
+
+    public function finishAnime() {
+        $id = $this->id;
+        $status = Functions::checkIfFinished('animes', $id);
+        return ['anime' => $status];
+    }
 }
