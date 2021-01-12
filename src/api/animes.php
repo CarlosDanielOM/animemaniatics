@@ -76,9 +76,23 @@
                 case 'addEpisode':
                     $anime = new animeController();
                     $anime->id = $req['id'];
-                    $res = $anime->addEpisode();
-                    return json_encode(['res' => $res]);
+                    $res = $anime->addAnimeEpisode();
+                    echo json_encode(['res' => $res]);
                 break;
+                case 'finishAnime':
+                    $anime = new animeController();
+                    $anime->id = $req['id'];
+                    $res = $anime->finishAnime();
+                    echo json_encode(["res" => $res]);
+                break;
+                case 'changeNames':
+                    $anime = new animeController();
+                    $anime->id = $req['id'];
+                    $anime->name = $req['name'];
+                    $anime->ENG_name = $req['ENG_name'];
+                    $anime->hiragana_name = $req['hiragana_name'];
+                    $anime->second_ENG_name = $req['second_ENG_name'];
+                    $res = $anime->
             }
         break;
         default:

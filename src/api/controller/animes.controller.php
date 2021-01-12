@@ -75,15 +75,29 @@ class animeController {
         return ['anime' => $update];
     }
 
-    public function addEpisode() {
+    public function addAnimeEpisode() {
         $id = $this->id;
-        $status = Functions::checkIfFinished('animes', $id);
-        return ['anime' => $status];
+        $status = Functions::checkIfFinished('anime', $id);
+        if($status === "Emision") {
+            $update = animesModel::addAnimeEpisode($id);
+            return ['anime' => $update];
+        } else {
+            return ['anime' => 'Anime already ended'];
+        }
     }
 
     public function finishAnime() {
         $id = $this->id;
-        $status = Functions::checkIfFinished('animes', $id);
-        return ['anime' => $status];
+        $status = Functions::checkIfFinished('anime', $id);
+        if($status === "Emision") {
+            $update = animesModel::finishAnime($id);
+            return ['anime' => $update];
+        } else {
+            return ['anime' => 'Anime is already in \'ended\' status'];
+        }
+    }
+
+    public function changeAnimeNames() {
+        
     }
 }

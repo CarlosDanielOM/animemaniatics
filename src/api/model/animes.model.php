@@ -87,9 +87,42 @@ class animesModel {
         $stm->execute();
         $status = $stm->fetch();
         if(isset($status)) {
-            return $status;
+            return $status['0'];
         } else {
             return 'There was a problem getting anime status';
         }
+    }
+
+    public static function addAnimeEpisode($id) {
+        $x = Database::connect();
+        $stm = $x->prepare('UPDATE animes SET episodes = episodes + 1 WHERE id = :id');
+        $stm->bindParam(':id', $id, PDO::PARAM_INT);
+        if($stm->execute()) {
+            return 'Episode Number added';
+        } else {
+            return 'Error while adding an episode';
+        }
+    }
+
+    public static function finishAnime($id) {
+        $x = Database::connect();
+        $stm = $x->prepare("UPDATE animes SET status = 'Ended' WHERE id = :id");
+        $stm->bindParam(':id', $id, PDO::PARAM_INT);
+        if($stm->execute()) {
+            return 'Anime set to Finish';
+        } else {
+            return 'Error while setting anime to finish';
+        }
+    }
+
+    public static function changeAnimeNames($anime_data) {
+        $x = Database::connect();
+        $stm = $x->prepare("UPDATE animes SET name = :name, ENG_name = :ENG_name, hiragana_name = ;:hiragana_name, second_ENG_name = :second_ENG_name WHERE id = :id");
+        $stm->bindParam(':id', $anime_data['id'], PDO::PARAM_INT);
+        $stm->bindParam(':name', $anime_data['name'], PDO::PARAM_STR);
+        $stm->bindParam(':ENG_name', $anime_data['ENG_name'], PDO::PARAM_STR);
+        $stm->bindParam(':hiragana_name', $anime_data['hiragana_name'], PDO::PARAM_STR);
+        $stm->bindParam(':second_ENG_name', $anime_data['second_ENG_name'], PDO::PARAM_STR);
+        // Finish the execution part
     }
 }
