@@ -2,7 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+.content-first{
+    display:none;
+}
 .waiting-page{
     width: 100vw;
     height: 100vh;
@@ -10,7 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
 }
 .cont-title{
     width: auto;
