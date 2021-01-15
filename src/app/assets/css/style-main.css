@@ -2,24 +2,31 @@
     margin: 0px;
     padding: 0px;
 }
+
 .content-first{
-    display:none;
+    
 }
 .waiting-page{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to right,  rgba(16, 240, 83, 0.801), rgba(0, 255, 255, 0.815));  
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
 }
 .cont-title{
-    width: auto;
-    height: auto;
+   display: block;
 }
 .waiting-title{
-    font-size: 2.5rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.5rem;
+    font-family: 'Hind Siliguri', sans-serif;
     color:rgb(111, 0, 255) ;
     text-align: center;
+}
+.waiting-loader{
+    padding: 100px;
+}
+.container-nav{
+    padding: 0px 5% 0px 5%;
 }

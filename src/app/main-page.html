@@ -7,30 +7,35 @@
     <link rel="stylesheet" href="/src/app/assets/css/style-main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="waiting-page">
-        <div class="cont-title">
-            <p class="waiting-title">Hello and Welcomo to ANIMEMANIATICS</p>
+    <div class="waiting-page" id="loading">
+        <div class="cont-title" id="loading1">
+            <p class="waiting-title">Hello and Welcomo to AnimeManiatics</p>
         </div>
-        <div class="preloader-wrapper active">
-            <div class="spinner-layer spinner-red-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
-              </div><div class="gap-patch">
-                <div class="circle"></div>
-              </div><div class="circle-clipper right">
-                <div class="circle"></div>
+        <div class="waiting-loader" id="loading2">
+            <div class="preloader-wrapper big active">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
               </div>
             </div>
-        </div>       
+        </div>
     </div>
-    <main class="content-first">
-        <div class="navbar-fixed">
+    <main class="content-first" id="contend">
+        <div class="navbar-fixed" id="nav">
             <nav class="deep-purple darken-4">
-                <div class="nav-wrapper container">
-                    <a href="#!" class="brand-logo">Animemaniatics</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <div class="nav-wrapper container-nav">
+                    <a href="#" class="brand-logo">Animemaniatics</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger" id="button"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#">Sass</a></li>
                         <li><a href="#">Components</a></li>
