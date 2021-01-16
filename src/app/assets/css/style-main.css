@@ -29,4 +29,40 @@
 }
 .container-nav{
     padding: 0px 5% 0px 5%;
+    height: 12vh;
+}
+.nav-logo{
+    width: 240px;
+    height: 68px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-search{
+    position: relative;
+    width: 220px;
+    height: 10px;
+    background-color: rgb(58, 13, 110);
+}
+.nav-search{
+    position: absolute;;
+    border-radius: 40px;
+    background-color: rgb(58, 13, 110);
+    
+}
+.nav-area-search{
+    height: 50px;
+}
+.nav-button-search{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
