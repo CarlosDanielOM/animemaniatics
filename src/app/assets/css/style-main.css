@@ -1,5 +1,5 @@
 .content-first{
-    
+    display: none;
 }
 .waiting-page{
     width: 100vw;
@@ -54,7 +54,14 @@
 }
 .nav-button-search{
     position: absolute;
-    color: #ccc8c8;
     right: -140px;
     top: -12px;
+}
+#btn-user{
+    border-radius: 50px;
+    margin: 6px;
+}
+#btn-mode{
+    border-radius: 50px;
+    margin: 6px;
 }

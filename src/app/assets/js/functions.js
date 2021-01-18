@@ -12,6 +12,12 @@ window.addEventListener('load',()=>{
     }
   }
 })
+if(document.addEventListener("wheel")){
+  document.addEventListener("wheel", function(){
+    document.getElementById('nav').className='navbar-fixed';
+  })
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems);
