@@ -39,7 +39,7 @@
                     <a href="#" class="brand-logo">
                         <img src="/src/app/assets/img/title_proyect_c.png" class="nav-logo" alt="">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger" id="button"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right" id="button"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down nav-menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Anime repertoire</a></li>
@@ -58,7 +58,14 @@
             </nav>
         </div>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Sass</a></li>
+            <li>
+                <div class="content-search">
+                    <div class="input-field nav-area-search">
+                        <input id="search" type="search" required class="" placeholder="Que buscas?">
+                        <label class="label-icon" for="search"><i class="material-icons nav-button-search">search</i></label>
+                    </div>
+                </div>
+            </li>
             <li><a href="#">Components</a></li>
             <li><a href="#">Javascript</a></li>
             <li><a href="#">Mobile</a></li>
