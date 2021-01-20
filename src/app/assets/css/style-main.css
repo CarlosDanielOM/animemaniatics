@@ -4,7 +4,7 @@
 .waiting-page{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right,  rgba(16, 240, 83, 0.801), rgba(0, 255, 255, 0.815));  
+    background: linear-gradient(to right,  #00ff4cea, #00ffffe5);  
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -59,12 +59,19 @@
     display: inline;
 }
 #btn-user{
-    border-radius: 50px;
+    border-radius: 10px;
     margin: 6px;
+    font-size: 10px;
+}
+.mode{
+    margin: 0px 6px;
 }
 #btn-mode{
-    border-radius: 50px;
-    margin: 6px;
+    background:#292929;
+    margin: 0px;
+}
+#btn-mode::after{
+    background: #ffd000;
 }
 #mobile-demo{
     background-color: #47228b;
@@ -73,32 +80,59 @@
 #mobile-demo > li > a{
     color: white;
 }
-@media screen and (min-width: 800px){
-    .content-search{
-        position:relative;
-        margin: 2% 0% 0% 0%;
+.content-main{
+    display: none;
+}
+#main{
+    width: 100%;
+    height: 88vh;
+    background: green;
+    margin-top: 2vh;
+}
+.content-footer{
+    display: none;
+}
+#footer{
+    width: 100%;
+    height: 160px;
+    background-color: brown;
+}
+@media screen and (max-width:320px){
+    .waiting-title{
+        font-size: 2.5rem;
+        font-family: 'Hind Siliguri', sans-serif;
+        color:rgb(111, 0, 255) ;
+        text-align: center;
     }
-    .nav-area-search{
-        position: relative;
-        top: 12px;
-        width: 160px;
-        padding: 4px;
-        background-color: #36055e;
-        border-radius: 50px;
+    .container-nav{
+        padding: -100px;
+        height: 10vh;
     }
-    #search{
-        position: relative;
-        width: 120px;
-        border-radius: 50px;
-        background-color: #36055e;
-        color: #ccc8c8;
-        padding: 4px;
-        margin:0px;
-        
+    .nav-logo{
+        width: 200px;
+        height: 56px;
+        margin-right: 40px;
     }
-    .nav-button-search{
-        position: absolute;
-        right: -136px;
-        top: -12px;
-        display: inline;
+    #main{
+        background-color: aqua;
+    }
+}
+@media screen and (max-width:620px){
+    .waiting-title{
+        font-size: 2.5rem;
+        font-family: 'Hind Siliguri', sans-serif;
+        color:rgb(111, 0, 255) ;
+        text-align: center;
+    }
+    .container-nav{
+        padding: 0px;
+        height: 10vh;
+    }
+    .nav-logo{
+        width: 200px;
+        height: 60px;
+    }
+    #main{
+        background-color: bisque;
+    }
 }

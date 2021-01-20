@@ -33,8 +33,8 @@
         </div>
     </section>
     <header class="content-first" id="contend">
-        <div class="navbar-fixed" id="nav">
-            <nav class="purple darken-4 container-nav" id="nav">
+        <div id="nav">
+            <nav class="purple darken-4 container-nav">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">
                         <img src="/src/app/assets/img/title_proyect_c.png" class="nav-logo" alt="">
@@ -52,7 +52,16 @@
                             </div>
                         </li>
                         <li><a href="#" class="waves-effect waves-light btn purple darken-4" id="btn-user"><i class="material-icons left">person</i>Login</a></li>
-                        <li><a href="#" class="waves-effect waves-light btn purple darken-4" id="btn-mode"><i class="material-icons">brightness_6</i></a></li>
+                        <li>
+                            <div class="switch mode">
+                                <label>
+                                    off
+                                    <input type="checkbox">
+                                    <span class="lever" id="btn-mode"></span>
+                                    on  
+                                </label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -61,17 +70,23 @@
             <li>
                 <div class="content-search">
                     <div class="input-field nav-area-search">
-                        <input id="search" type="search" required class="" placeholder="Que buscas?">
+                        <input id="search" type="search" required placeholder="Search...">
                         <label class="label-icon" for="search"><i class="material-icons nav-button-search">search</i></label>
                     </div>
                 </div>
             </li>
             <li><a href="#" class="waves-effect waves-light btn purple darken-4" id="btn-user"><i class="material-icons left">person</i>Login</a></li>
-                        <li><a href="#" class="waves-effect waves-light btn purple darken-4" id="btn-mode"><i class="material-icons">brightness_6</i></a></li>
+            <li><a href="#" class="waves-effect waves-light btn purple darken-4" id="btn-mode"><i class="material-icons">brightness_6</i></a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Anime repertorie</a></li>
         </ul>
     </header>
+    <main class="content-main" id="main">
+        
+    </main>
+    <footer class="content-footer" id="footer">
+
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/src/app/assets/js/functions.js"></script>
 </body>
