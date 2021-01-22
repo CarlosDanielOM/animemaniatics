@@ -1,3 +1,13 @@
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #9c9c9c;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #7e7e7e;
+}
 .waiting-page{
     width: 100vw;
     height: 100vh;
@@ -11,7 +21,7 @@
    display: block;
 }
 .waiting-title{
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: 'Hind Siliguri', sans-serif;
     color:rgb(111, 0, 255) ;
     text-align: center;
@@ -66,7 +76,7 @@
     margin: 0px 6px;
 }
 #btn-mode{
-    background:#292929;
+    background:#192842;
     margin: 0px;
 }
 #btn-mode::after{
@@ -107,6 +117,20 @@
     right: -216px;
     top: 8px;
 }
+#mobile-demo li #btn-user{
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+    font-size: 12px;
+    padding: 0px 22px 0px 22px;
+}
+#mobile-demo li .mode{
+    margin: 0px 20px;
+}
+#mobile-demo li .mode label{
+    margin: 0px auto;
+}
 .content-main{
     display: none;
 }
@@ -125,43 +149,43 @@
     background-color: brown;
 }
 /* media responsive for divices small */
-@media (min-width:100px) and (max-width:619px){
+@media (min-width:100px) and (max-width:500px){
     .waiting-title{
-        font-size: 2.5rem;
-        font-family: 'Hind Siliguri', sans-serif;
-        color:rgb(111, 0, 255) ;
-        text-align: center;
+        font-size: 2rem;
+    }
+    .waiting-loader{
+        padding: 40px;
     }
     .container-nav{
-        padding: -100px;
-        height: 66px;
+        padding: 0px;
+        height: 64px;
     }
     .nav-logo{
         width: 200px;
         height: 56px;
-        margin-right: 40px;
+        margin-right: 60px;
     }
     #main{
         background-color: aqua;
     }
 }
 /* media responsive for divices medium */
-@media (min-width:620px) and (max-width:995px){
+@media (min-width:501px) and (max-width:992px){
     .waiting-title{
-        font-size: 2.5rem;
-        font-family: 'Hind Siliguri', sans-serif;
-        color:rgb(111, 0, 255) ;
-        text-align: center;
+        font-size: 3rem;
     }
     .container-nav{
-        padding: 0px;
-        height: 10vh;
+        position: relative;
+        padding: 0px 20;
+        height: 76px;
     }
     .nav-logo{
-        width: 200px;
-        height: 60px;
+        width: 184px;
+        height: 68px;
+        margin-left: -40vw;
     }
     #main{
+        margin-top: 20px;
         background-color: bisque;
     }
 }
@@ -169,21 +193,21 @@
 /* media responsive for divices big  */
 @media (min-width:1440px) and (max-width:1880px){
     .waiting-title{
-        font-size: 4.5rem;
-        font-family: 'Hind Siliguri', sans-serif;
-        color:rgb(111, 0, 255) ;
-        text-align: center;
+        font-size: 5rem;
     }
     .container-nav{
-        padding: 0px 40px;
-        height: 10vh;
+        padding: 0px 60px;
+        height: 88px;
+    }
+    .nav-menu{
+       margin-top: 10px;
     }
     .nav-logo{
-        width: 240px;
-        height: 80px;
+        width: 260px;
+        height: 86px;
     }
     #main{
         background-color: #ff004c;
-        margin-top: 4vh;
+        margin-top: 28px;
     }
 }
