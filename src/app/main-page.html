@@ -41,7 +41,9 @@
                     <a href="#" class="brand-logo">
                         <img src="/src/app/assets/img/title_proyect_c.png" class="nav-logo" alt="">
                     </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right" id="button"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right" id="button">
+                        <i class="material-icons">menu</i>
+                    </a>
                     <ul class="right hide-on-med-and-down nav-menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Anime repertorie</a></li>
@@ -49,11 +51,17 @@
                             <div class="content-search">
                                 <div class="input-field nav-area-search">
                                     <input id="search" type="search" required class="" placeholder="Search...">
-                                    <label class="label-icon" for="search"><i class="material-icons nav-button-search">search</i></label>
+                                    <label class="label-icon" for="search">
+                                        <i class="material-icons nav-button-search">search</i>
+                                    </label>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" class="waves-effect waves-light btn purple darken-4" id="btn-user"><i class="material-icons left">person</i>Login</a></li>
+                        <li>
+                            <a href="#modallog" class="waves-effect waves-light btn modal-trigger purple darken-4" id="btn-user">
+                                <i class="material-icons left">person</i>Login
+                            </a>
+                        </li>
                         <li>
                             <div class="switch mode">
                                 <label>
@@ -68,16 +76,23 @@
                 </div>
             </nav>
         </div>
+        <!-- mobile menu content -->
         <ul class="sidenav" id="mobile-demo">
             <li>
                 <div class="content-search">
                     <div class="input-field nav-area-search">
                         <input id="search" type="search" required placeholder="Search...">
-                        <label class="label-icon" for="search"><i class="material-icons nav-button-search">search</i></label>
+                        <label class="label-icon" for="search">
+                            <i class="material-icons nav-button-search">search</i>
+                        </label>
                     </div>
                 </div>
             </li>
-            <li><a href="#" class="waves-effect waves-light btn purple darken-4" id="btn-user"><i class="material-icons">person</i>Login</a></li>
+            <li>
+                <a href="#modallog" class="waves-effect waves-light btn modal-trigger purple darken-4" id="btn-user">
+                    <i class="material-icons">person</i>Login
+                </a>
+            </li>
             <li>
                 <div class="switch mode">
                     <label>
@@ -91,6 +106,26 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Anime repertorie</a></li>
         </ul>
+        <!-- modal register -->
+            <div id="modallog" class="modal">
+                    <h4>Log In</h4>
+                    <div class="divider"></div>
+                    <div class="modal-content">
+                        <label for="">
+                            <input type="text" placeholder="User">
+                        </label>
+                        <label for="">
+                            <input type="password" placeholder="Password">
+                        </label>
+                        <button type="submit">Log In</button>
+                        <button type="submit">Log In with Facebook</button>
+                    </div>
+                <div class="modal-footer">
+                    <a href="#">Register</a>
+                    <a href="#">Forgot your password?</a>
+                    <a href="#!" class="modal-close waves-effect btn-flat">Leave</a>
+                </div>
+            </div>
     </header>
     <!-- main content -->
     <main class="content-main" id="main">
