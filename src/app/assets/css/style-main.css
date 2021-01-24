@@ -1,3 +1,4 @@
+/* style to the scrollbar */
 body::-webkit-scrollbar{
     width: 8px;
 }
@@ -8,6 +9,7 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
     background-color: #7e7e7e;
 }
+/* style to the content loader */
 .waiting-page{
     width: 100vw;
     height: 100vh;
@@ -29,9 +31,11 @@ body::-webkit-scrollbar-thumb:hover{
 .waiting-loader{
     padding: 100px;
 }
+/* all content */
 .content-first{
     display: none;
 }
+/* style to the nav-menu */
 .container-nav{
     padding: 0px 4% 0px 4%;
     height: 72px;
@@ -39,6 +43,13 @@ body::-webkit-scrollbar-thumb:hover{
 .nav-logo{
     width: 240px;
     height: 68px;
+}
+#nav .nav-wrapper ul li .text-menu{
+    font-size: 16px;
+}
+#nav .nav-wrapper ul li .text-menu:hover{
+    background-color: transparent;
+    color: #868686;
 }
 .content-search{
     position:relative;
@@ -70,44 +81,7 @@ body::-webkit-scrollbar-thumb:hover{
 #btn-user{
     border-radius: 10px;
     margin: 6px;
-    font-size: 10px;
-}
-#modallog{
-    width: 22em;
-    border-radius: 10px;
-    text-align: center;
-}
-#modallog h4{
-    font-size: 28px;
-    font-family: 'Hind Siliguri', sans-serif;
-    margin: 2px 10px;
-}
-#modallog .modal-content{
-    padding: 6px;
-}
-#modallog .modal-content input{
-    display: block;
-    width: 240px;
-    height: 2.5rem;
-    font-size: 14px;
-    margin: 8px auto;
-    box-shadow:none;
-}
-#modallog .modal-content input:focus-visible{
-    border-bottom: 1.5px solid purple;
-    box-shadow:1.5px solid purple;
-}
-#modallog .modal-content button{
-    display: block;
-    width: 240px;
-    height: 2.5rem;
-    border-radius: 4px;
-    margin: 8px auto;
-    border: none;
-}
-#modallog .modal-footer a{
-    font-size: 14px;
-    margin: 2px 6px;
+    font-size: 12px;
 }
 .mode{
     margin: 0px 4px;
@@ -119,6 +93,54 @@ body::-webkit-scrollbar-thumb:hover{
 #btn-mode::after{
     background: #ffd000;
 }
+/* style to the log in content */
+#modallog{
+    width: 24em;
+    border-radius: 10px;
+    text-align: center;
+    border: 1.5px solid #5d00a8;
+}
+#modallog .title-modal{
+    font-size: 28px;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 2px 10px;
+}
+#modallog .modal-content{
+    padding: 6px;
+}
+#modallog .modal-content input{
+    display: block;
+    width: 240px;
+    height: 2.5rem;
+    font-size: 16px;
+    margin: 8px auto;
+    box-shadow:none;
+}
+#modallog .modal-content input:focus-visible{
+    border-bottom: 2px solid #7700ff;
+    box-shadow:2px solid  #7700ff;
+}
+#modallog .modal-content button{
+    display: block;
+    width: 240px;
+    height: 2.5rem;
+    font-size: 16px;
+    background-color: #00c02a;
+    color: #ffffff;
+    font-family: 'Hind Siliguri', sans-serif;
+    border-radius: 4px;
+    margin: 8px auto;
+    border: none;
+}
+#modallog .modal-content .facebook{
+    background-color: #006eff;
+}
+#modallog .modal-footer a{
+    font-size: 14px;
+    margin: 2px 6px;
+    color: #00cf2d;
+}
+/* style to the nav-menu-mobile */
 #mobile-demo{
     background-color: #47228b;
     width: 260px;
@@ -176,6 +198,7 @@ body::-webkit-scrollbar-thumb:hover{
 #mobile-demo li .mode label{
     margin: 0px auto;
 }
+/* style to the main */
 .content-main{
     display: none;
 }
@@ -185,6 +208,7 @@ body::-webkit-scrollbar-thumb:hover{
     background: green;
     margin-top: 2vh;
 }
+/* style to the content menu */
 .content-footer{
     display: none;
 }
@@ -210,6 +234,38 @@ body::-webkit-scrollbar-thumb:hover{
         height: 56px;
         margin-right: 60px;
     }
+    #modallog{
+        width: 18em;
+    }
+    #modallog .title-modal{
+        font-size: 22px;
+        margin: 2px 8px;
+    }
+    #modallog .modal-content{
+        padding: 4px;
+    }
+    #modallog .modal-content input{
+        display: block;
+        width: 200px;
+        height: 2rem;
+        font-size: 12px;
+        margin: 6px auto;
+    }
+    #modallog .modal-content button{
+        display: block;
+        width: 200px;
+        height: 2rem;
+        font-size: 12px;
+        margin: 6px auto;
+        border: none;
+    }
+    #modallog .modal-content .facebook{
+        background-color: #006eff;
+    }
+    #modallog .modal-footer a{
+        font-size: 12px;
+        margin: 2px 0px;
+    }
     #main{
         background-color: aqua;
     }
@@ -228,6 +284,38 @@ body::-webkit-scrollbar-thumb:hover{
         width: 184px;
         height: 68px;
         margin-left: -40vw;
+    }
+    #modallog{
+        width: 20em;
+    }
+    #modallog .title-modal{
+        font-size: 24px;
+        margin: 4px 8px;
+    }
+    #modallog .modal-content{
+        padding: 4px;
+    }
+    #modallog .modal-content input{
+        display: block;
+        width: 220px;
+        height: 2.2rem;
+        font-size: 14px;
+        margin: 8px auto;
+    }
+    #modallog .modal-content button{
+        display: block;
+        width: 220px;
+        height: 2.2rem;
+        margin: 8px auto;
+        font-size: 14px;
+        border: none;
+    }
+    #modallog .modal-content .facebook{
+        background-color: #006eff;
+    }
+    #modallog .modal-footer a{
+        font-size: 13px;
+        margin: 2px 2px;
     }
     #main{
         margin-top: 20px;
@@ -250,6 +338,38 @@ body::-webkit-scrollbar-thumb:hover{
     .nav-logo{
         width: 260px;
         height: 86px;
+    }
+    #modallog{
+        width: 26em;
+    }
+    #modallog .title-modal{
+        font-size: 28px;
+        margin: 4px 8px;
+    }
+    #modallog .modal-content{
+        padding: 4px;
+    }
+    #modallog .modal-content input{
+        display: block;
+        width: 260px;
+        height: 2.8rem;
+        font-size: 18px;
+        margin: 10px auto;
+    }
+    #modallog .modal-content button{
+        display: block;
+        width: 260px;
+        height: 2.8rem;
+        font-size: 18px;
+        margin: 10px auto;
+        border: none;
+    }
+    #modallog .modal-content .facebook{
+        background-color: #006eff;
+    }
+    #modallog .modal-footer a{
+        font-size: 16px;
+        margin: 2px 6px;
     }
     #main{
         background-color: #ff004c;
