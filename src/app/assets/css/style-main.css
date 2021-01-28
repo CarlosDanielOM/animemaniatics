@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 /* style to the scrollbar */
 body::-webkit-scrollbar{
     width: 8px;
@@ -210,7 +213,7 @@ body{
     width: 100%;
     margin-top: 2vh;
     display: grid;
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 300px 15fr;
     grid-template-rows: 4fr 8fr;
     gap: 10px;
 }
@@ -231,29 +234,29 @@ body{
     font-size: 2rem;
     color: #9c9c9c;
     font-family:sans-serif;
+    padding: 10px;
 }
 .anime-content-item1{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,auto);
-    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .anime-content-item2{
-    width: 98%;
-    height: 98%;
-    display: grid;
-    grid-template-columns: repeat(4,minmax(220px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(300px,1fr));
-    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .item1{
-    width: 220px;
+    width: 23%;
     height: 160px;
     background-color: #ff004c;
+    margin:6px auto;
 }
 .item2{
-    width: 220px;
+    width: 23%;
     height: 300px;
     background-color: #00f7ff;
+    margin: 6px auto;
 }
 /* style to the content footer */
 .content-footer{
@@ -316,9 +319,42 @@ body{
     #main{
         background-color: aqua;
     }
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 640px 4fr 8fr;
+        gap: 10px;
+    }
+    .aside-content1{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    .content-anime{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+    .content-anime1{
+        grid-column: 1/-1;
+        grid-row: 3/-1;
+    }
+    .anime-title{
+        font-size: 2rem;
+    }
+    .item1{
+        width: 90%;
+        height: 240px;
+        background-color: #f503a4;
+        margin:8px auto;
+    }
+    .item2{
+        width: 90%;
+        height: 400px;
+        background-color: #ffa600;
+        margin: 8px auto;
+    }
 }
-/* media responsive for divices medium */
-@media (min-width:501px) and (max-width:992px){
+/* media responcive for divices medium small */
+@media (min-width:502px) and (max-width:770px){
     .waiting-title{
         font-size: 3rem;
     }
@@ -368,8 +404,161 @@ body{
         margin-top: 20px;
         background-color: bisque;
     }
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 680px 4fr 8fr;
+        gap: 10px;
+    }
+    .aside-content1{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    .content-anime{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+    .content-anime1{
+        grid-column: 1/-1;
+        grid-row: 3/-1;
+    }
+    .anime-title{
+        font-size: 2rem;
+    }
+    .item1{
+        width: 48%;
+        height: 240px;
+        background-color: #f503a4;
+        margin:8px auto;
+    }
+    .item2{
+        width: 48%;
+        height: 400px;
+        background-color: #ffa600;
+        margin: 8px auto;
+    }
 }
-
+/* media responsive for divices medium */
+@media (min-width:771px) and (max-width:992px){
+    .waiting-title{
+        font-size: 3rem;
+    }
+    .container-nav{
+        position: relative;
+        padding: 0px 20;
+        height: 76px;
+    }
+    .nav-logo{
+        width: 184px;
+        height: 68px;
+        margin-left: -40vw;
+    }
+    #modallog{
+        width: 20em;
+    }
+    #modallog .title-modal{
+        font-size: 24px;
+        margin: 4px 8px;
+    }
+    #modallog .modal-content{
+        padding: 4px;
+    }
+    #modallog .modal-content input{
+        display: block;
+        width: 220px;
+        height: 2.2rem;
+        font-size: 14px;
+        margin: 8px auto;
+    }
+    #modallog .modal-content button{
+        display: block;
+        width: 220px;
+        height: 2.2rem;
+        margin: 8px auto;
+        font-size: 14px;
+        border: none;
+    }
+    #modallog .modal-content .facebook{
+        background-color: #006eff;
+    }
+    #modallog .modal-footer a{
+        font-size: 13px;
+        margin: 2px 2px;
+    }
+    #main{
+        margin-top: 20px;
+        background-color: bisque;
+    }
+    #main{
+        display: grid;
+        grid-template-columns: 300px 12fr;
+        grid-template-rows: 4fr 8fr;
+        gap: 10px;
+    }
+    .aside-content1{
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+    }
+    .content-anime{
+        grid-column: 2/-1;
+        grid-row: 1/2;
+    }
+    .content-anime1{
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+    }
+    .anime-title{
+        font-size: 2rem;
+    }
+    .item1{
+        width: 44%;
+        height: 160px;
+        background-color: #f503a4;
+        margin:8px auto;
+    }
+    .item2{
+        width: 44%;
+        height: 300px;
+        background-color: #ffa600;
+        margin: 8px auto;
+    }
+}
+/* media responsive for divices medium-large */
+@media (min-width:993px) and (max-width:1200px){
+    #main{
+        display: grid;
+        grid-template-columns: 300px 12fr;
+        grid-template-rows: 4fr 8fr;
+        gap: 10px;
+    }
+    .aside-content1{
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+    }
+    .content-anime{
+        grid-column: 2/-1;
+        grid-row: 1/2;
+    }
+    .content-anime1{
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+    }
+    .anime-title{
+        font-size: 2rem;
+    }
+    .item1{
+        width: 32%;
+        height: 160px;
+        background-color: #f503a4;
+        margin:8px auto;
+    }
+    .item2{
+        width: 32%;
+        height: 300px;
+        background-color: #ffa600;
+        margin: 8px auto;
+    }
+}
 /* media responsive for divices big  */
 @media (min-width:1440px) and (max-width:1880px){
     .waiting-title{
@@ -421,5 +610,38 @@ body{
     #main{
         background-color: #ff004c;
         margin-top: 28px;
+    }
+    #main{
+        display: grid;
+        grid-template-columns: 340px 12fr;
+        grid-template-rows: 4fr 8fr;
+        gap: 10px;
+    }
+    .aside-content1{
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+    }
+    .content-anime{
+        grid-column: 2/-1;
+        grid-row: 1/2;
+    }
+    .content-anime1{
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+    }
+    .anime-title{
+        font-size: 2rem;
+    }
+    .item1{
+        width: 19%;
+        height: 140px;
+        background-color: #f503a4;
+        margin:8px auto;
+    }
+    .item2{
+        width: 19%;
+        height: 280px;
+        background-color: #ffa600;
+        margin: 8px auto;
     }
 }
