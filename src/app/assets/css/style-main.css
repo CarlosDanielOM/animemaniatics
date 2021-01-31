@@ -236,49 +236,91 @@ body{
 }
 .anime-title{
     display: block;
+    width: 96%;
+    margin: 0px auto;
     font-size: 2rem;
     color: #9c9c9c;
     font-family:sans-serif;
     padding: 10px;
 }
 .anime-content-item1{
-    width: 100%;
+    width: 96%;
+    margin: 2px auto;
     display: flex;
     flex-wrap: wrap;
 }
 .anime-content-item2{
-    width: 100%;
+    width: 96%;
+    margin: 2px auto;
     display: flex;
     flex-wrap: wrap;
 }
 .item1{
-    width: 23%;
-    height: 160px;
-    background-color: #ff0055;
-    margin:8px auto;
-    border-radius: 20px;
-    transition-property: transform, box-shadow;
-    transition-duration: 0.4s;
-}
-.item1:hover{
-    transform: scale(1.05);
-    box-shadow: 4px 4px 4px #2e2e2ede;
-}
-.link-item1{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    width: 22%;
+    height: 140px;
     background-image: url(/src/app/assets/img/boku.jpg);
     background-size: cover;
     background-position: center;
     background-origin: content-box;
+    margin:8px auto;
+    border-radius: 20px;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.2s;
+}
+.item1:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 4px 4px #2e2e2ede;
+}
+.link-item1{
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 28px;
+    gap: 2px;
+    opacity: 0;
+    transition-property: opacity;
+    transition: .2s;
 }
 .link-item1:hover{
-    opacity: .8;
+    opacity: .2;
+}
+.link-info{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+.link-play{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+.link-title{
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    width: 94%;
+    margin: 0px auto;
+    font-family:sans-serif;
+    color:#ffffff;
+    font-size: 20px;
+    opacity: 1;
+}
+.play{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #00c02a;
+    opacity: 0;
+} 
+.play:hover{
+    opacity: 1;
 }
 .item2{
-    width: 23%;
+    width: 22%;
     height: 300px;
     background-color: #00f7ff;
     margin: 12px auto;
@@ -294,7 +336,7 @@ body{
 .legion{
     width: 90%;
     height: 50%;
-    margin: 10px auto;
+    margin: 10px 0px 10px 30px;
     background-color: #00c02a;
 }
 /* style to the content footer */
