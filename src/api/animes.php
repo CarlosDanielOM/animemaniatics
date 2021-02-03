@@ -99,3 +99,5 @@
         break;
     }
 ?>
+
+<!-- Test comment in php? -->
