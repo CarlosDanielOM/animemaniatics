@@ -219,7 +219,7 @@ body{
     margin-top: 2vh;
     display: grid;
     grid-template-columns: 340px 15fr;
-    grid-template-rows: 4fr 6fr;
+    grid-template-rows: 3fr 6fr;
     gap: 4px;
 }
 .aside-content1{
@@ -256,7 +256,8 @@ body{
     flex-wrap: wrap;
 }
 .item1{
-    width: 22%;
+    position: relative;
+    width: 23%;
     height: 140px;
     background-image: url(/src/app/assets/img/boku.jpg);
     background-size: cover;
@@ -265,28 +266,29 @@ body{
     margin:8px auto;
     border-radius: 20px;
     transition-property: transform, box-shadow;
-    transition-duration: 0.2s;
+    transition-duration: 200ms;
 }
 .item1:hover{
-    transform: scale(1.05);
-    box-shadow: 4px 4px 4px 4px #2e2e2ede;
+    transform: scale(1.04);
+    box-shadow: 4px 4px 2px 2px #2e2e2ede;
+}
+.shadow-item1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #616161;
+    border-radius: 22px;
+    opacity: .2;
 }
 .link-item1{
     display: grid;
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #808080;
     border-radius: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 28px;
     gap: 2px;
-    opacity: 0;
-    transition-property: opacity;
-    transition: .2s;
-}
-.link-item1:hover{
-    opacity: .2;
 }
 .link-info{
     grid-column: 1/-1;
@@ -299,12 +301,14 @@ body{
 .link-title{
     grid-column: 1/-1;
     grid-row: 3/-1;
-    width: 94%;
+    width: 96%;
     margin: 0px auto;
-    font-family:sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     color:#ffffff;
-    font-size: 20px;
+    font-size: 17px;
     opacity: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .play{
     position: absolute;
@@ -313,25 +317,68 @@ body{
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: #00c02a;
+    color: #00e031;
     opacity: 0;
 } 
 .play:hover{
     opacity: 1;
 }
+.play i{
+    font-size: 48px !important;
+}
 .item2{
-    width: 22%;
+    width: 21%;
     height: 300px;
-    background-color: #00f7ff;
     margin: 12px auto;
-    border-radius: 10px;
+    border-radius: 6px;
+    border: .2px solid #bbbbbb;
     transition-property: transform, box-shadow;
-    transition-duration: 0.4s;
+    transition-duration: 200ms;
 }
 .item2:hover{
     transform: scale(1.02);
-    box-shadow: 4px 4px 4px 4px #797979;
-    cursor: pointer;
+    box-shadow: 4px 4px 2px 2px #797979;
+}
+.link-item2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1f;
+    grid-template-rows: 80% 1fr;
+    color: #2b2b2b;
+}
+.img-item2{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    position: relative;
+    width: 94%;
+    height: 96%;
+    margin: 6px auto;
+    background-image: url(/src/app/assets/img/boku.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin:border-box;
+    border-radius: 6px;
+}
+.shadow-item2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #616161;
+    border-radius: 10px;
+    opacity: .1;
+}
+.title-item2{
+    margin:2px 4px;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 15px;
+    text-overflow:clip;
+    overflow:hidden;
+}
+.link-item2:hover{
+    color: #5a00c0;
 }
 .legion{
     width: 90%;
@@ -345,7 +392,7 @@ body{
 }
 #footer{
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #462bc0;
 }
 /* media responsive for divices small */
@@ -423,12 +470,15 @@ body{
     }
     .item1{
         width: 86%;
-        height: 240px;
+        height: 188px;
         background-color: #f503a4;
-        margin:8px auto;
+        margin:10px auto;
+    }
+    .link-title{
+        font-size: 20px;
     }
     .item2{
-        width: 86%;
+        width: 70%;
         height: 400px;
         background-color: #ffa600;
         margin: 8px auto;
