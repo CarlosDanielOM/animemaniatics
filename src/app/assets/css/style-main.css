@@ -3,11 +3,11 @@
 }
 /* style to the scrollbar */
 body::-webkit-scrollbar{
-    width: 8px;
+    width: 10px;
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #9c9c9c;
-    border-radius: 10px;
+    background-color: #a3a3a3;
+    border-radius: 50px;
 }
 body::-webkit-scrollbar-thumb:hover{
     background-color: #7e7e7e;
@@ -257,7 +257,7 @@ body{
 }
 .item1{
     position: relative;
-    width: 23%;
+    width: 22%;
     height: 140px;
     background-image: url(/src/app/assets/img/boku.jpg);
     background-size: cover;
@@ -278,7 +278,7 @@ body{
     height: 100%;
     background-color: #616161;
     border-radius: 22px;
-    opacity: .2;
+    opacity: .3;
 }
 .link-item1{
     display: grid;
@@ -305,7 +305,7 @@ body{
     margin: 0px auto;
     font-family: 'Hind Siliguri', sans-serif;
     color:#ffffff;
-    font-size: 17px;
+    font-size: 18px;
     opacity: 1;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -373,7 +373,7 @@ body{
     margin:2px 4px;
     text-align: center;
     font-family: 'Hind Siliguri', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     text-overflow:clip;
     overflow:hidden;
 }
