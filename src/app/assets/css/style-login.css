@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: #dbdbdb;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 68px 1fr 60px;
+}
+.container-nav{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 0px 4% 0px 4%;
+    height: 66px;
+}
+.nav-logo{
+    width: 240px;
+    height: 64px;
+}
+.nav-wrapper ul li .text-menu{
+    font-size: 1.1em;
+}
+.nav-wrapper ul li .text-menu:hover{
+    background-color: transparent;
+    color: #868686;
+}
+#mobile-demo{
+    background-color: #3219a5;
+    width: 260px;
+}
+#mobile-demo > li > a{
+    color: white;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+.main-login{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-area{
+    width: 50%;
+    height: 400px;
+    border: 1px solid #9c9c9c;
+    border-radius: 20px;
+}
+#register{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 16% 1fr;
+}
+.title-area{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0cc01b;
+    border-radius: 18px 18px 0px 0px;
+}
+.title-area p{
+    font-size:28px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #f1f1f1;
+    margin: 0px 20px;
+}
+.date-area{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+}
+.footer-login{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    width: 100%;
+    height: 60px;
+    background-color: #4626d4;
+}

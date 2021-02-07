@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeManiatics-login</title>
     <link rel="shortcut icon" href="/src/app/assets/img/favicon-v1.5.png" type="image/x-icon">
-    <link rel="stylesheet" href="/src/app/assets/css/style-main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/src/app/assets/css/style-login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -21,9 +21,31 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right" id="button">
                     <i class="material-icons">menu</i>
                 </a>
+                <ul class="right hide-on-med-and-down nav-menu">
+                    <li><a href="#" class="text-menu">Home</a></li>
+                </ul>
             </div>
         </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+        </ul>
     </header>
+    <main class="main-login">
+        <section class="form-area">
+            <div id="register">
+                <div class="title-area">
+                    <p>Register</p>
+                </div>
+                <div class="date-area">
+
+                </div>
+            </div>
+            <div id="login"></div>
+        </section>
+    </main>
+    <footer class="footer-login">
+
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         M.AutoInit();
