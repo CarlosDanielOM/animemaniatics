@@ -1,3 +1,7 @@
+:root{
+    --color-area:#7a0397;
+    --color-form:#dbaa0a;
+}
 *{
     box-sizing:border-box;
 }
@@ -70,7 +74,7 @@ body{
     position: relative;
     justify-content: flex-start;
     align-items: center;
-    background-color: #07a514;
+    background-color:var(--color-area);
     border-radius: 16px 16px 0px 0px;
 }
 .title-area p{
@@ -86,14 +90,14 @@ body{
     height: 28px;
     border-radius: 12px;
     border: none;
-    background-color: #dfae0f;
+    background-color:var(--color-form);
     color: #f1f1f1;
 }
 .b-change:active{
     transform: scale(.9);
 }
 .b-change:focus{
-    background-color: #dfae0f;
+    background-color:var(--color-form);
 }
 .date-area{
     grid-column: 1/-1;
@@ -114,15 +118,34 @@ body{
     grid-row: 1/2;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#content-d{
+    width: 26%;
 }
 .d-input{
-    width: 31% !important;
-    margin: 1% !important;
+    width: 100% !important;
+    font-size: 14px !important;
+    margin: 0px !important;
     color: #f1f1f1;
+    box-shadow: none !important;
+}
+.d-input:focus-visible{
+    border-bottom: 1px solid var(--color-form) !important;
+    box-shadow:1px solid var(--color-form) !important;
+}
+.d-input:focus-visible+label{
+    color: var(--color-form) !important;
 }
 .date2{
     grid-column: 1/2;
     grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .date3{
     grid-column: 1/2;
@@ -138,13 +161,13 @@ body{
     border-radius: 8px;
     color: #f1f1f1;
     font-size: 16px;
-    background-color: #07a514;
+    background-color:var(--color-area);
 }
 .b-date3:active{
     transform: scale(.9);
 }
 .b-date3:focus{
-    background-color: #07a514;
+    background-color: var(--color-area);
 }
 /* style form2  */
 #login{
@@ -154,5 +177,10 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 16% 1fr;
-    display: none;
+}
+#login .date-area #content-d{
+    width: 50%;
+}
+.off{
+    display: none !important;
 }
