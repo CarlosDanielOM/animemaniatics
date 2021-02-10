@@ -178,9 +178,182 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 16% 1fr;
 }
+.dates1{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 100px;
+}
+.dates1 fieldset{
+    border: none;
+}
 #login .date-area #content-d{
     width: 50%;
 }
 .off{
     display: none !important;
+}
+@media (min-width:100px) and (max-width:440px){
+    .container-nav{
+        padding: 0px 0% 0px 0%;
+        height: 60px;
+    }
+    .nav-logo{
+        width: 180px;
+        height: 48px;
+    }
+    .form-area{
+        width: 86%;
+        height: 500px;
+    }
+    .title-area p{
+        font-size:18px;
+    }
+    .b-change{
+        position: absolute;
+        right: 10%;
+        width: 28%;
+        height: 32px;
+        font-size: 12px;;
+    }
+    .dates{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 40px;
+    }    
+    #content-d{
+        width: 44%;
+    }
+    #content-d label{
+        font-size: 10px;
+    }
+    .d-input{
+        font-size: 12px !important;
+    }
+    .b-date3{
+        width: 86px;
+        height: 24px;
+        font-size: 14px;
+    }
+}
+@media (min-width:441px) and (max-width:720px){
+    .container-nav{
+        padding: 0px 2% 0px 2%;
+        height: 64px;
+    }
+    .nav-logo{
+        width: 220px;
+        height: 60px;
+    }
+    .form-area{
+        width: 80%;
+        height: 480px;
+    }
+    .title-area p{
+        font-size:24px;
+    }
+    .b-change{
+        position: absolute;
+        right: 10%;
+        width: 120px;
+        height: 30px;
+        font-size: 14px;;
+    }
+    .dates{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 46px;
+    }    
+    #content-d{
+        width: 42%;
+    }
+    #content-d label{
+        font-size: 14px;
+    }
+    .d-input{
+        font-size: 14px !important;
+    }
+    .b-date3{
+        width: 88px;
+        height: 28px;
+        font-size: 16px;
+    }
+}
+@media (min-width:721px) and (max-width:992px){
+    .form-area{
+        width: 60%;
+        height: 480px;
+    }
+    .title-area p{
+        font-size:26px;
+    }
+    .b-change{
+        position: absolute;
+        right: 10%;
+        width: 120px;
+        height: 30px;
+        font-size: 16px;;
+    }
+    .dates{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 60px;
+    }    
+    #content-d{
+        width: 40%;
+    }
+    #content-d label{
+        font-size: 16px;
+    }
+    .d-input{
+        font-size: 16px !important;
+    }
+    .b-date3{
+        width: 92px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+@media (min-width:1440px) and (max-width:1880px){
+    .container-nav{
+        padding: 0px 6% 0px 6%;
+        height: 80px;
+    }
+    .nav-logo{
+        width: 280px;
+        height: 78px;
+    }
+    .nav-wrapper ul li .text-menu{
+        font-size: 1.6em;
+    }
+    .form-area{
+        width: 68%;
+        height: 540px;
+    }
+    .title-area p{
+        font-size:32px;
+    }
+    .b-change{
+        position: absolute;
+        right: 10%;
+        width: 180px;
+        height: 36px;
+        font-size: 18px;;
+    }
+    .dates{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 80px;
+    }    
+    #content-d{
+        width: 28%;
+    }
+    #content-d label{
+        font-size: 16px;
+    }
+    .d-input{
+        font-size: 16px !important;
+    }
+    .b-date3{
+        width: 92px;
+        height: 30px;
+        font-size: 16px;
+    }
 }
