@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeManiatics-repertorie</title>
     <link rel="shortcut icon" href="/src/app/assets/img/favicon-v1.5.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/app/assets/css/style-repertorie.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -15,46 +16,48 @@
 </head>
 <body>
     <!-- contain header -->
-    <header class="content-first">
-        <nav class="deep-purple darken-4 container-nav">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">
-                    <img src="/src/app/assets/img/title_proyect_c.png" class="nav-logo" alt="">
-                </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right" id="button">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down nav-menu">
-                    <li><a href="#" class="text-menu">Home</a></li>
-                    <li><a href="#" class="text-menu">Anime repertorie</a></li>
-                    <li>
-                        <div class="content-search">
-                            <div class="input-field nav-area-search">
-                                <input id="search" type="search" class="" placeholder="Search..." maxlength="30">
-                                <label class="label-icon" for="search">
-                                    <i class="material-icons nav-button-search">search</i>
+    <header class="content-first" id="contend">
+        <div id="nav">
+            <nav class="deep-purple darken-4 container-nav">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">
+                        <img src="/src/app/assets/img/title_proyect_c.png" class="nav-logo" alt="">
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right" id="button">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down nav-menu">
+                        <li><a href="#" class="text-menu">Home</a></li>
+                        <li><a href="/src/app/repertorie.html" class="text-menu">Anime repertorie</a></li>
+                        <li>
+                            <div class="content-search">
+                                <div class="input-field nav-area-search">
+                                    <input id="search" type="search" class="" placeholder="Search..." maxlength="30">
+                                    <label class="label-icon" for="search">
+                                        <i class="material-icons nav-button-search">search</i>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#modallog" class="waves-effect waves-light btn modal-trigger deep-purple darken-3" id="btn-user">
+                                <i class="material-icons left">person</i>Login
+                            </a>
+                        </li>
+                        <li>
+                            <div class="switch mode">
+                                <label>
+                                    off
+                                    <input type="checkbox">
+                                    <span class="lever" id="btn-mode"></span>
+                                    on  
                                 </label>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#modallog" class="waves-effect waves-light btn modal-trigger deep-purple darken-3" id="btn-user">
-                            <i class="material-icons left">person</i>Login
-                        </a>
-                    </li>
-                    <li>
-                        <div class="switch mode">
-                            <label>
-                                off
-                                <input type="checkbox">
-                                <span class="lever" id="btn-mode"></span>
-                                on  
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <!-- mobile menu content -->
         <ul class="sidenav" id="mobile-demo">
             <li>
@@ -83,7 +86,7 @@
                 </div>
             </li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Anime repertorie</a></li>
+            <li><a href="/src/app/repertorie.html">Anime repertorie</a></li>
         </ul>
         <!-- modal register -->
             <div id="modallog" class="modal">
@@ -106,5 +109,299 @@
                 </div>
             </div>
     </header>
+    <!-- main content -->
+    <main class="content-main" id="main">
+        <aside class="aside-content1">
+            <div class="legion"></div>
+        </aside>
+        <section class="content-filter">
+            <article class="filter-secc">
+
+            </article>
+        </section>
+        <section class="content-anime1">
+            <h6 class="anime-title">Section Anime´s</h6>
+            <article class="anime-content-item2">
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                            <span class="play">
+                                <i class="medium material-icons">play_circle_outline</i>
+                            </span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+                <div class="item2">
+                    <a href="#" class="link-item2">
+                        <div class="img-item2">
+                            <span class="shadow-item2"></span>
+                        </div>
+                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                        <span class="play">
+                            <i class="medium material-icons">play_circle_outline</i>
+                        </span>
+                    </a>
+                    <span class="icon-item2">
+                        <i class="material-icons">favorite_border</i>
+                        <i class="material-icons">turned_in_not</i>
+                        <i class="material-icons">info_outline</i>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <section class="content-pagination">
+            <article class="pagination-secc"> 
+                <ul class="pagination">
+                  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                  <li class="active"><a href="#!">1</a></li>
+                  <li class="waves-effect"><a href="#!">2</a></li>
+                  <li class="waves-effect"><a href="#!">3</a></li>
+                  <li class="waves-effect"><a href="#!">4</a></li>
+                  <li class="waves-effect"><a href="#!">5</a></li>
+                  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </article>
+        </section>
+        <aside class="aside-content2">
+            <div class="legion"></div>
+        </aside>
+    </main>
+    <!-- footer content -->
+    <footer class="content-footer" id="footer">
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/src/app/assets/js/fuctions-repertorie.js"></script>
 </body>
 </html>
