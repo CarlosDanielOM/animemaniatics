@@ -216,7 +216,7 @@ body{
     grid-row: 1/-1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr 80px;
+    grid-template-rows: 60px 1fr 80px;
     gap: 10px;
 }
 /* filter layout */
@@ -236,7 +236,34 @@ body{
     width: 90%;
     height: 100%;
     margin: 0px auto;
-    background-color: #2b2b2b;
+    /* background-color: #2b2b2b; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.select-wrapper input.select-dropdown:focus{
+    border-bottom: 1px solid blueviolet !important;
+}
+.input-field .dropdown-content li span{
+    color: blueviolet;
+}
+.btn-filter{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #7700ff ;
+    color: #ffffff;
+    font-size: 16px;
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+}
+.btn-filter:active{
+    transform: scale(0.9);
+}
+.btn-filter:focus{
+    background-color: #7700ff;
 }
 /* tyle anime content */
 .anime-title{
@@ -314,8 +341,8 @@ body{
     opacity: 1;
 }
 .play i{
-    font-size: 50px !important;
-    margin: 0px 0px 40% 0px;
+    font-size: 48px !important;
+    margin-bottom: 40%;
 }
 .title-item2{
     grid-column: 1/-1;
