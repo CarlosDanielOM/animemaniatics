@@ -117,7 +117,10 @@
         <section class="content-anime1">
             <section class="content-filter">
                 <article class="filter-secc">
-                    <div class="input-field">
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Gender</a>
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown2'>Order</a>
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown3'>Upload date</a>
+                    <!-- <div class="input-field">
                         <select multiple>
                           <option value="" disabled>Gender</option>
                           <option value="1">Option 1</option>
@@ -141,7 +144,23 @@
                           <option value="3">This year</option>
                           <option value="3">Past</option>
                         </select>
-                    </div>
+                    </div> -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><label><input type="checkbox"><span>Option 1</span> </label></li>
+                        <li><label><input type="checkbox"><span>Option 2</span> </label></li>
+                        <li><label><input type="checkbox"><span>Option 3</span> </label></li>
+                    </ul>
+                    <ul id='dropdown2' class='dropdown-content'>
+                      <li><label><input type="checkbox"><span>Of A to Z</span> </label></li>
+                      <li><label><input type="checkbox"><span>Of Z to A</span> </label></li>
+                      <li><label><input type="checkbox"><span>Simbol #</span> </label></li>
+                    </ul>
+                    <ul id='dropdown3' class='dropdown-content'>
+                      <li><label><input type="checkbox"><span>This week</span> </label></li>
+                      <li><label><input type="checkbox"><span>This month</span> </label></li>
+                      <li><label><input type="checkbox"><span>This year</span> </label></li>
+                      <li><label><input type="checkbox"><span>Past</span> </label></li>
+                    </ul>
                     <button class="btn-filter" id="btn-filter">Filter <i class="material-icons">tune</i></button>
                 </article>
             </section>
