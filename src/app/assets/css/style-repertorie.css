@@ -12,6 +12,7 @@ body::-webkit-scrollbar-thumb:hover{
 /* style to the body */
 body{
     background-image: #dbdbdb;
+    min-height: 100vh;
 }
 /* style nav content */
 .content-first{
@@ -194,6 +195,7 @@ body{
     grid-template-columns: 1fr 62% 1fr;
     grid-template-rows: 1fr;
     gap: 4px;
+    min-height: 80vh;
 }
 /* aside layout */
 .aside-content1{

@@ -122,7 +122,7 @@ body{
     align-items: center;
 
 }
-#content-d{
+.content-d{
     width: 26%;
 }
 .d-input{
@@ -194,7 +194,7 @@ body{
 .off{
     display: none !important;
 }
-@media (min-width:100px) and (max-width:440px){
+@media(max-width:440px){
     .container-nav{
         padding: 0px 0% 0px 0%;
         height: 60px;
@@ -205,7 +205,8 @@ body{
     }
     .form-area{
         width: 86%;
-        height: 500px;
+        height: 88%;
+        min-height: 500px;
     }
     .title-area p{
         font-size:18px;
@@ -221,10 +222,10 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 40px;
     }    
-    #content-d{
+    .content-d{
         width: 44%;
     }
-    #content-d label{
+    .content-d label{
         font-size: 10px;
     }
     .d-input{

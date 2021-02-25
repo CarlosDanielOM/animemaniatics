@@ -15,6 +15,7 @@ body::-webkit-scrollbar-thumb:hover{
 /* style to the body */
 body{
     background-image: #dbdbdb;
+    min-height: 100vh;
 }
 /* style to the content loader */
 .waiting-page{
@@ -223,6 +224,7 @@ body{
     grid-template-columns: 1fr 62% 1fr;
     grid-template-rows: 3fr 6fr;
     gap: 4px;
+    min-height: 80vh;
 }
 .aside-content1{
     grid-column: 1/2;
@@ -448,6 +450,7 @@ body{
     }
     #modallog{
         width: 18em;
+        height: 18em;
     }
     #modallog .title-modal{
         font-size: 22px;
