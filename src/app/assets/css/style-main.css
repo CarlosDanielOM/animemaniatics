@@ -338,6 +338,10 @@ body{
 .play i{
     font-size: 48px !important;
 }
+.item2 .link-item2 .play i{
+    font-size: 48px !important;
+    margin-bottom: 40%;
+}
 .item2{
     position: relative;
     width: 22%;
@@ -394,7 +398,7 @@ body{
     overflow:hidden;
 }
 .link-item2:hover{
-    color: #039b75;
+    color: #00e031;
 }
 .icon-item2{
     position: absolute;
