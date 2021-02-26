@@ -41,9 +41,41 @@
                 <form action="" class="date-form">
                     <div class="input-field content-date">
                         <input id="name" type="text" class="d-input" required>
-                        <label for="name">First Name</label>
+                        <label for="name">Anime name</label>
+                    </div>
+                    <div class="file-field input-field content-date">
+                        <div class="btn">
+                          <span>File</span>
+                          <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                    <div class="input-field content-date">
+                        <input id="caption" type="text" class="d-input" required>
+                        <label for="caption">Caption</label>
+                    </div>
+                    <div class="content-date-check">
+                        <label>
+                            <input class="with-gap" name="status" type="radio" >
+                            <span>Emision</span>
+                        </label>
+                        <label>
+                            <input class="with-gap" name="status" type="radio" >
+                            <span>Finish</span>
+                        </label>  
+                    </div>
+                    <div class="content-date">
+                        <input type="text" class="datepicker" placeholder="Release-date">
+                    </div>
+                    <div class="content-date">
+                        <input type="text" class="datepicker" placeholder="Ended-date">
                     </div>
                 </form>
+                <div class="content-btn">
+                    <button class="btn-data">Apply</button>
+                </div>
             </div>
         </section>
         <section class="anime-preview">
@@ -52,6 +84,7 @@
             </div>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/src/app/assets/js/fuctions-anime-create.js"></script>
 </body>
 </html>
