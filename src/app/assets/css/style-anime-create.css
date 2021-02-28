@@ -52,7 +52,7 @@ body{
     margin: 0px auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 48px;
+    grid-template-rows: 1fr 46px;
 }
 .date-form{
     grid-column: 1/2;
@@ -63,7 +63,7 @@ body{
 }
 .content-date{
     width: 30%;
-    height: 10%;
+    height: 20%;
 }
 .d-input{
     width: 100% !important;
@@ -107,6 +107,28 @@ body{
 }
 .content-date-check label span::after{
     background-color: var(--color-data) !important;
+}
+.datepicker{
+    color: #ffffff;
+}
+div.input-field .select-wrapper .select-dropdown{
+    color: #ffffff;
+}
+div.input-field .select-wrapper .select-dropdown:focus-visible{
+    border-bottom: 1px solid var(--color-data) !important;
+    box-shadow:1px solid var(--color-data) !important;
+}
+div.input-field .select-wrapper ul{
+    background-color: rgba(0, 0, 0, 0.493) !important;
+}
+div.input-field .select-wrapper li span{
+    color: #ffffff !important;
+}
+.content-date-area{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
 }
 .content-btn{
     grid-column: 1/2;
