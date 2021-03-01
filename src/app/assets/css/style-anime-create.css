@@ -63,7 +63,7 @@ body{
 }
 .content-date{
     width: 30%;
-    height: 20%;
+    height: 10%;
 }
 .d-input{
     width: 100% !important;
@@ -130,6 +130,9 @@ div.input-field .select-wrapper li span{
     display: flex;
     justify-content: center;
 }
+.disable{
+    display: none;
+}
 .content-btn{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -160,6 +163,8 @@ div.input-field .select-wrapper li span{
     border-radius: 10px;
     margin: 0px auto;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 1fr;
 }
 /* .content2::-webkit-scrollbar{
     width: 8px;
@@ -180,6 +185,7 @@ div.input-field .select-wrapper li span{
     border-radius: 100%;
     opacity: .8;
     cursor: pointer;
+    z-index: 1;
 }
 .btn-change i{
     color: #ffffff;
@@ -187,4 +193,30 @@ div.input-field .select-wrapper li span{
 .btn-change:hover{
     transform: scale(1.2);
     opacity: 1;
+}
+.content-card{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 60%;
+    height: 90%;
+    background-color: #ffffffe1;
+    border-radius: 10px;
+    transition: transform 200ms;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+.link-card{
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+}
+.content-tag{
+    grid-column: 1/2;
+    grid-row: 2/3;
 }

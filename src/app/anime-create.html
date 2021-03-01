@@ -58,18 +58,18 @@
                     </div>
                     <div class="content-date-check">
                         <label>
-                            <input class="with-gap" name="status" type="radio" >
+                            <input class="with-gap" name="status" type="radio" id="emision">
                             <span>Emision</span>
                         </label>
                         <label>
-                            <input class="with-gap" name="status" type="radio" >
+                            <input class="with-gap" name="status" type="radio" id="finish">
                             <span>Finish</span>
                         </label>  
                     </div>
-                    <div class="content-date">
+                    <div class="content-date disable" id="dt1">
                         <input type="text" class="datepicker" placeholder="Release-date">
                     </div>
-                    <div class="content-date">
+                    <div class="content-date disable" id="dt2">
                         <input type="text" class="datepicker" placeholder="Ended-date">
                     </div>
                     <div class="input-field content-date">
@@ -102,24 +102,23 @@
         <section class="anime-preview">
             <div class="content2">
                 <span class="btn-change"> <i class="material-icons">desktop_windows</i></span>
-                <!-- <div class="card">
-                    <a href="#" class="link-item2">
-                        <div class="img-item2">
-                            <span class="shadow-item2"></span>
-                        </div>
-                        <div class="title-item2">Yatogame-chan Kansatsu Nikki Sansatsume</div>
-                        <span class="play">
-                            <i class="medium material-icons">play_circle_outline</i>
+                <div class="content-card">
+                    <div class="card">
+                        <a href="#" class="link-card">
+                            <div class="img-card">
+                                <span class="shadow-card"></span>
+                            </div>
+                            <div class="title-card">Yatogame-chan Kansatsu Nikki Sansatsume</div>
+                        </a>
+                        <span class="icon-card">
+                            <i class="material-icons">info_outline</i>
                         </span>
-                    </a>
-                    <span class="icon-item2">
-                        <i class="material-icons">favorite_border</i>
-                        <i class="material-icons">turned_in_not</i>
-                        <i class="material-icons">info_outline</i>
-                    </span>
-                </div> -->
+                    </div>
+                </div>
+                <div class="content-tag">
+                    
+                </div>
             </div>
-            <!-- <div class="content3"></div> -->
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
