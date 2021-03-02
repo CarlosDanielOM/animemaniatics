@@ -22,3 +22,16 @@ finish.addEventListener("click", function(){
   dt1.classList.remove("disable");
   dt2.classList.remove("disable");
 })
+
+var btn_info=document.getElementById('info');
+var card=document.getElementById('the-card');
+var cnt_info=document.getElementById('content-info');
+var btn_exit=document.getElementById('exit');
+btn_info.addEventListener("click",function(){
+  cnt_info.classList.remove("content-info");
+  cnt_info.classList.add("content-info2");
+})
+btn_exit.addEventListener("click",function(){
+  cnt_info.classList.remove("content-info2");
+  cnt_info.classList.add("content-info");
+})
