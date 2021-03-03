@@ -9,7 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('select');
   var instances = M.FormSelect.init(elems);
 });
-
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.chips');
+  var instances = M.Chips.init(elems);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.tooltipped');
+  var instances = M.Tooltip.init(elems);
+});
 var emision=document.getElementById('emision');
 var finish=document.getElementById('finish');
 var dt1=document.getElementById('dt1');

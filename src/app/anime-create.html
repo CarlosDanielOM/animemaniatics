@@ -49,7 +49,7 @@
                           <input type="file">
                         </div>
                         <div class="file-path-wrapper">
-                          <input class="file-path validate" type="text">
+                          <input class="file-path validate" type="text" placeholder="Anime image">
                         </div>
                     </div>
                     <div class="input-field content-date">
@@ -90,11 +90,19 @@
                         <label for="hiragana-name">Hiragana name</label>
                     </div>
                     <div class="input-field content-date-area">
-                        <textarea id="description" class="materialize-textarea d-input" maxlength="160"></textarea>
+                        <textarea id="description" class="materialize-textarea d-input" maxlength="220"></textarea>
                         <label for="description">Description</label>
                     </div>
                 </form>
                 <div class="content-btn">
+                    <div class="input-field cont-tags">
+                        <input id="tags" type="text" class="d-input" required maxlength="16">
+                        <label for="tags">Anime tags</label>
+                    </div>
+                    <button class="btn tooltipped btn-tag-info" 
+                    data-position="top" data-tooltip="Press enter when you have your tag">
+                        <i class="material-icons">help_outline</i>
+                    </button>
                     <button class="btn-data">Apply</button>
                 </div>
             </div>
@@ -113,9 +121,22 @@
                         </span>
                         <div class="content-info" id="content-info">
                             <article class="info-date">
-                                <section class="title-info"></section>
-                                <section class="tags-info"></section>
-                                <section class="description-info"></section>
+                                <section class="title-info">Yatogame-chan Kansatsu Nikki Sansatsume</section>
+                                <section class="raiting-info">
+                                    Raiting: <span>4.8</span><i class="material-icons" id="starts">star</i>
+                                </section>
+                                <section class="tags-info">
+                                    <span class="card-tag">Tag</span>
+                                    <span class="card-tag">Tag</span>
+                                    <span class="card-tag">Tag</span>
+                                    <span class="card-tag">Tag</span>
+                                    <span class="card-tag2">Ova</span>
+                                </section>
+                                <section class="description-info">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis 
+                                    tempora numquam velit? Soluta totam repellat, omnis possimus adipisci.
+                                    omnis possimus adipisci. omnis possimus adipisci.
+                                </section>
                             </article>
                             <span class="icon-info">
                                 <i class="material-icons" id="exit">close</i>
