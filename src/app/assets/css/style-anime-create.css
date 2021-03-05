@@ -131,9 +131,6 @@ div.input-field .select-wrapper li span{
     display: flex;
     justify-content: center;
 }
-.disable{
-    display: none;
-}
 .content-btn{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -150,6 +147,7 @@ div.input-field .select-wrapper li span{
     border-radius: 20% !important;
     background-color: #000000c2 !important;
     color: #ffffff;
+    cursor: default !important;
 }
 .btn-tag-info:hover{
     background-color: black;
@@ -298,16 +296,16 @@ div.input-field .select-wrapper li span{
 .title-info{
     grid-column: 1/2;
     grid-row: 1/2;
-    display: flex;
     text-align: center;
+    overflow: hidden;
 }
 .raiting-info{
     grid-column: 1/2;
     grid-row: 2/3;
 }
 .raiting-info i{
-    margin: 0px 10px;
-    font-size: 16px !important;
+    margin: 0px 2px;
+    font-size: 12px !important;
     color: #fbcd00;
 }
 .tags-info{
@@ -315,29 +313,32 @@ div.input-field .select-wrapper li span{
     grid-row: 3/4;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    overflow:hidden;
 }
 .card-tag{
     background-color:var(--color-data);
-    height: 26px;
+    height: 30%;
     color: #ffffff;
-    border-radius: 25%;
+    border-radius: 20px;
     padding: 2px 4px;
-    font-size: 14px;
+    font-size: 12px;
+    margin: 1px;
 }
 .card-tag2{
-    background-color:var(--color-area);
-    height: 26px;
+    background-color:#008ddf;
+    height: 30%;
     color: #ffffff;
-    border-radius: 25%;
+    border-radius: 20px;
     padding: 2px 4px;
-    font-size: 14px;
+    font-size: 12px;
+    margin: 1px;
 }
 .description-info{
     grid-column: 1/2;
     grid-row: 4/5;
     text-align:justify;
     font-size: 14px;
+    overflow: hidden;
 }
 .icon-info{
     position: absolute;
@@ -355,4 +356,17 @@ div.input-field .select-wrapper li span{
 .content-tag{
     grid-column: 1/2;
     grid-row: 2/3;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.chip{
+    height: 30% !important;
+    margin: 1px !important;
+    background-color: var(--color-data) !important;
+    color: #ffffff !important;
+}
+/* property display none */
+.disable{
+    display: none;
 }
