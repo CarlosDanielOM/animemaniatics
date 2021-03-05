@@ -42,3 +42,10 @@ btn_exit.addEventListener("click",function(){
   cnt_info.classList.remove("content-info2");
   cnt_info.classList.add("content-info");
 });
+var btn_chang=document.getElementById('btn-change');
+var cont1=document.getElementById('cont1');
+var cont2=document.getElementById('cont2');
+btn_chang.addEventListener("click",function(){
+  cont1.classList.add('disable');
+  cont2.classList.add('disable');
+});

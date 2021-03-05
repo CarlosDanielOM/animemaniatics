@@ -36,8 +36,10 @@
     </header>
     <!-- main content -->
     <main class="main" id="main">
+        <!-- section of the data anime -->
         <section class="anime-data">
-            <div class="content1">
+             <!-- content of the data anime1 -->
+            <div class="content1" id="cont1">
                 <form action="" class="date-form">
                     <div class="input-field content-date">
                         <input id="name" type="text" class="d-input" required maxlength="50">
@@ -93,23 +95,71 @@
                         <textarea id="description" class="materialize-textarea d-input" maxlength="220"></textarea>
                         <label for="description">Description</label>
                     </div>
+                    <div class="content-date-btn">
+                        <div class="input-field cont-tags">
+                            <input id="tags" type="text" class="d-input" required maxlength="100">
+                            <label for="tags">Anime tags</label>
+                        </div>
+                        <button class="btn tooltipped btn-tag-info" 
+                        data-position="top" data-tooltip="Press Apply when you have your info ready">
+                            <i class="material-icons">help_outline</i>
+                        </button>
+                    </div>
                 </form>
                 <div class="content-btn">
-                    <div class="input-field cont-tags">
-                        <input id="tags" type="text" class="d-input" required maxlength="100">
-                        <label for="tags">Anime tags</label>
-                    </div>
-                    <button class="btn tooltipped btn-tag-info" 
-                    data-position="top" data-tooltip="Press Apply when you have your info ready">
-                        <i class="material-icons">help_outline</i>
-                    </button>
                     <button class="btn-data">Apply</button>
+                    <button class="btn-save-data">Save</button>
+                </div>
+            </div>
+              <!-- content of the data anime2 -->
+            <div class="content1_2" id="cont1_2">
+                <form action="" class="date-form">
+                    <div class="file-field input-field content-date">
+                        <div class="btn">
+                          <span>File</span>
+                          <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text" placeholder="Background image">
+                        </div>
+                    </div>
+                    <div class="input-field content-date">
+                        <input id="second-name" type="text" class="d-input" required maxlength="50">
+                        <label for="second-name">Second ENG_name</label>
+                    </div>
+                    <div class="input-field content-date">
+                        <select>
+                            <option value="" disabled selected>  </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="1">4</option>
+                            <option value="2">5</option>
+                            <option value="3">6</option>
+                            <option value="1">7</option>
+                            <option value="2">10</option>
+                            <option value="3">11</option>
+                            <option value="1">12</option>
+                            <option value="2">13</option>
+                            <option value="3">16</option>
+                            <option value="1">20</option>
+                            <option value="2">24</option>
+                            <option value="3">More</option>
+                        </select>
+                        <label>Type anime</label>
+                    </div>
+                </form>
+                <div class="content-btn">
+                    <button class="btn-data">Apply</button>
+                    <button class="btn-save-data">Save</button>
                 </div>
             </div>
         </section>
+        <!-- section of the preview anime card -->
         <section class="anime-preview">
-            <div class="content2">
-                <span class="btn-change"> <i class="material-icons">desktop_windows</i></span>
+              <!-- content of the preview anime1 -->
+            <div class="content2" id="cont2">
+                <span class="btn-change" id="btn-change"> <i class="material-icons">desktop_windows</i></span>
                 <div class="content-card">
                     <div class="the-card" id="the-card">
                         <a href="#" class="link-card">
@@ -121,7 +171,11 @@
                         </span>
                         <div class="content-info" id="content-info">
                             <article class="info-date">
-                                <section class="title-info">Your anime title</section>
+                                <section class="title-info">    
+                                    <span>
+                                        Your anime title
+                                    </span>
+                                </section>
                                 <section class="raiting-info">
                                     Raiting: <span>Num. example</span><i class="material-icons" id="starts">star</i>
                                 </section>
@@ -147,6 +201,10 @@
                         <i class="close material-icons">close</i>
                       </div>
                 </div>
+            </div>
+            <!-- content of the preview anime2 -->
+            <div class="content2_2" id="cont2_2">
+                <span class="btn-change" id="btn-change"> <i class="material-icons">crop_original</i></span>
             </div>
         </section>
     </main>
