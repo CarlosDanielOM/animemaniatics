@@ -52,7 +52,6 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 62px;
-    display: none;
 }
 .date-form{
     grid-column: 1/2;
@@ -200,7 +199,6 @@ div.input-field .select-wrapper li span{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80% 1fr;
-    display: none;
 }
 .btn-change{
     position: absolute;
@@ -408,7 +406,49 @@ div.input-field .select-wrapper li span{
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 1fr;
+    grid-template-rows: 22% 1fr;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.content2_2-header{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+    background-image: url(/src/app/assets/img/boku.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+}
+.shadow-header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #000000b2;
+}
+.conternt-img-header{
+    position: absolute;
+    left: 2%;
+    bottom: -150%;
+    width: 28%;
+    height: 200%;
+    background-image: url(/src/app/assets/img/boku.jpg);
+    background-size: 96% 96%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+    background-color:var(--color-area);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-header{
+    width: 96%;
+    height: 96%;
+}
+.content2_2-cont{
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 /* property display none */
 .disable{

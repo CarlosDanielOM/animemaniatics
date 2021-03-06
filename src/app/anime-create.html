@@ -128,25 +128,8 @@
                         <label for="second-name">Second ENG_name</label>
                     </div>
                     <div class="input-field content-date">
-                        <select>
-                            <option value="" disabled selected>  </option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="1">4</option>
-                            <option value="2">5</option>
-                            <option value="3">6</option>
-                            <option value="1">7</option>
-                            <option value="2">10</option>
-                            <option value="3">11</option>
-                            <option value="1">12</option>
-                            <option value="2">13</option>
-                            <option value="3">16</option>
-                            <option value="1">20</option>
-                            <option value="2">24</option>
-                            <option value="3">More</option>
-                        </select>
-                        <label>Type anime</label>
+                        <input id="chapters" type="number" class="d-input" required max="2">
+                        <label for="chapters">Anime chapters</label>
                     </div>
                 </form>
                 <div class="content-btn">
@@ -204,7 +187,14 @@
             </div>
             <!-- content of the preview anime2 -->
             <div class="content2_2" id="cont2_2">
-                <span class="btn-change" id="btn-change"> <i class="material-icons">crop_original</i></span>
+                <span class="btn-change" id="btn-change1"> <i class="material-icons">crop_original</i></span>
+                <section class="content2_2-header">
+                    <div class="shadow-header"></div>
+                    <div class="conternt-img-header">
+                        <div class="img-header"></div>
+                    </div>
+                </section>
+                <section class="content2_2-cont"></section>
             </div>
         </section>
     </main>
