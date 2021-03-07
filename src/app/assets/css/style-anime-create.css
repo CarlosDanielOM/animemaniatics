@@ -347,7 +347,7 @@ div.input-field .select-wrapper li span{
     color: #ffffff;
     border-radius: 20px;
     padding: 2px 4px;
-    font-size: 12px;
+    font-size: 10px;
     margin: 1px;
 }
 .card-tag2{
@@ -356,7 +356,7 @@ div.input-field .select-wrapper li span{
     color: #ffffff;
     border-radius: 20px;
     padding: 2px 4px;
-    font-size: 12px;
+    font-size: 10px;
     margin: 1px;
 }
 .description-info{
@@ -432,10 +432,6 @@ div.input-field .select-wrapper li span{
     bottom: -150%;
     width: 28%;
     height: 200%;
-    background-image: url(/src/app/assets/img/boku.jpg);
-    background-size: 96% 96%;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 2px;
     background-color:var(--color-area);
     display: flex;
@@ -445,8 +441,57 @@ div.input-field .select-wrapper li span{
 .img-header{
     width: 96%;
     height: 96%;
+    background-image: url(/src/app/assets/img/boku.jpg);
+    background-position: center;
+    background-size:cover;
 }
 .content2_2-cont{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 32% 1fr;
+    grid-template-rows: 8% 14% 26% 1fr;
+}
+.cont-side{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+.cont-title{    
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 18px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: var(--color-data);
+}
+.cont-tags{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.cont-description{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.cont-description span{
+    display: block;
+    width: 90%;
+    text-align: justify;
+    font-size: 12px;
+}
+.cont-chapters{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 12% 1fr;
+}
+.title-chapter{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 16px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #7e7b7b;
+}
+.cont-chapter{
     grid-column: 1/2;
     grid-row: 2/3;
 }
