@@ -129,14 +129,6 @@ div.input-field .select-wrapper li span{
     display: flex;
     justify-content: center;
 }
-.content-btn{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 .content-date-btn{
     width: 100%;
     display: flex;
@@ -151,9 +143,20 @@ div.input-field .select-wrapper li span{
     background-color: #000000c2 !important;
     color: #ffffff;
     cursor: default !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .btn-tag-info:hover{
     background-color: black;
+}
+.content-btn{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .btn-data{
     position: absolute;
@@ -538,10 +541,7 @@ div.input-field .select-wrapper li span{
     font-size: 16px;
     font-family:'Hind Siliguri', sans-serif ;
 }
-/* property display none */
-.disable{
-    display: none;
-}
+
 /* media responsive for divices small */
 @media (max-width:480px){}
 /* media responcive for divices medium small */
@@ -609,4 +609,46 @@ div.input-field .select-wrapper li span{
     div.input-field .select-wrapper li span{
         font-size: 18px !important;
     }
+    div.input-field label {
+       font-size: 18px;
+    }
+    .btn-tag-info{
+       width: 48px !important;
+       height: 48px !important;
+    }
+    .btn-tag-info i{
+        font-size: 28px !important;
+    }
+    .btn-data{
+        right: 8px;
+        top: 8px;
+        padding: 14px;
+        font-size: 22px;
+    }
+    .btn-save-data{
+        left: 8px;
+        top: 8px;
+        padding: 14px;
+        font-size: 22px;
+    }
+    .btn-change{
+        right: 20px;
+        top: 20px;
+        padding: 8px;
+    }
+    .btn-change i{
+        font-size: 28px !important;
+    }
+    .the-card{
+        width: 46%;
+        height: 88%;
+    }
+    .link-card{
+        width: 92%;
+        height: 92%;
+    }
+}
+/* property display none */
+.disable{
+    display: none;
 }
