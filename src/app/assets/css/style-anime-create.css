@@ -353,6 +353,7 @@ div.input-field .select-wrapper li span{
     padding: 2px 4px;
     font-size: 10px;
     margin: 1px;
+    text-align: center;
 }
 .card-tag2{
     background-color:#008ddf;
@@ -362,6 +363,7 @@ div.input-field .select-wrapper li span{
     padding: 2px 4px;
     font-size: 10px;
     margin: 1px;
+    text-align: center;
 }
 .description-info{
     grid-column: 1/2;
@@ -395,6 +397,8 @@ div.input-field .select-wrapper li span{
     margin: 1px !important;
     background-color: var(--color-data) !important;
     color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
 }
 /* desing two for the form */
 .content1_2{
@@ -474,6 +478,7 @@ div.input-field .select-wrapper li span{
 .cont-description{
     grid-column: 2/3;
     grid-row: 3/4;
+    margin: 2px 0px;
 }
 .cont-description span{
     display: block;
@@ -549,7 +554,205 @@ div.input-field .select-wrapper li span{
 /* media responsive for divices medium */
 @media (min-width:721px) and (max-width:992px){}
 /* media responsive for divices medium-large */
-@media (min-width:993px) and (max-width:1220px){}
+@media (min-width:993px) and (max-width:1220px){
+    .container-nav{
+        height: 62px;
+    }
+    .nav-logo{
+        width: 220px;
+        height: 60px;
+    }
+    /* style main section */
+    .main{
+        width: 98%;
+        height: 88vh;
+        margin-top: 2vh;
+    }
+    /* layout of the anime form */
+    .anime-data{
+        border: 2px solid var(--color-area);
+    }
+    .anime-preview{
+        border: 2px solid var(--color-area);
+    }
+    /* section of the anime dates */
+    .content1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 48px;
+    }
+    .content-date{
+        width: 42%;
+        height: 10%;
+    }
+    .content-date label{
+        font-size: 13px !important;
+    }
+    /* note 1 */
+    .d-input{
+        font-size: 13px !important;
+    }
+    .input-field .btn{
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+    .file-path{
+        font-size: 16px !important;
+    }
+    .content-date-check{
+        width: 44%;
+        height: 10%;
+    }
+    .content-date-check label span{
+        font-size: 20px !important;
+    }
+    .datepicker{
+        font-size: 18px !important;
+    }
+    div.input-field .select-wrapper li span{
+        font-size: 18px !important;
+    }
+    div.input-field label {
+       font-size: 18px;
+    }
+    .btn-tag-info{
+       width: 48px !important;
+       height: 48px !important;
+    }
+    .btn-tag-info i{
+        font-size: 28px !important;
+    }
+    .btn-data{
+        right: 8px;
+        top: 8px;
+        padding: 14px;
+        font-size: 22px;
+    }
+    .btn-save-data{
+        left: 8px;
+        top: 8px;
+        padding: 14px;
+        font-size: 22px;
+    }
+    /* section of the anime preview */
+    .btn-change{
+        right: 20px;
+        top: 20px;
+        padding: 16px;
+    }
+    .btn-change i{
+        font-size: 40px !important;
+    }
+    .the-card{
+        width: 46%;
+        height: 88%;
+    }
+    .link-card{
+        width: 92%;
+        height: 92%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 78% 22%;
+    }
+    .title-card{
+        font-size: 28px;
+        overflow: hidden;
+    }
+    .icon-card{
+        padding:8px;
+    }
+    .icon-card i{
+        font-size: 28px !important;
+    }
+    .info-date{
+        width: 90%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 18% 14% 22% 1fr;
+    }
+    .title-info span{
+        font-size: 24px !important;
+    }
+    .raiting-info{
+        font-size: 20px;
+    }
+    .raiting-info span{
+        font-size: 20px;
+    }
+    .raiting-info i{
+        font-size: 20px !important;
+    }
+    .card-tag{
+        height: 30%;
+        font-size: 18px;
+        margin: 2px;
+    }
+    .card-tag2{
+        height: 30%;
+        font-size: 18px;
+        margin: 2px;
+    }
+    .description-info{
+        text-align:justify;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .icon-info{
+        padding: 8px;
+    }
+    .icon-info i{
+        font-size: 22px !important;
+    }
+    /* section tag of the section preview card */
+    .chip{
+        height: 30% !important;
+        margin: 2px !important;
+        font-size: 26px !important;
+    }
+    /* new section of the anime preview 2 */
+    .content2_2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 26% 1fr;
+    }
+    .conternt-img-header{
+        left: 2%;
+        bottom: -100%;
+        width: 30%;
+        height: 150%;
+    }
+    .content2_2-cont{
+        display: grid;
+        grid-template-columns: 34% 1fr;
+        grid-template-rows: 12% 14% 24% 1fr;
+    }
+    .cont-title{    
+        font-size: 28px;
+    }
+    .cont-description span{
+        font-size: 19px;
+    }
+    .title-chapter{
+        font-size: 24px;
+    }
+    .chapters{
+        width: 96%;
+        height: 96%;
+    }
+    .chapter{
+        width: 90%;
+        height: 28%;
+        display: grid;
+        grid-template-columns: 24% 80%;
+        grid-template-rows: 1fr;
+    }
+    .img-chapter{
+        background-size: 80% 90%;
+    }
+    .title-chapter{
+        font-size: 22px;
+    }
+}
 /* media responsive for divices big  */
 @media (min-width:1480px) and (max-width:1980px){
    /* style nav content */ 
@@ -631,13 +834,14 @@ div.input-field .select-wrapper li span{
         padding: 14px;
         font-size: 22px;
     }
+    /* section of the anime preview */
     .btn-change{
         right: 20px;
         top: 20px;
-        padding: 8px;
+        padding: 16px;
     }
     .btn-change i{
-        font-size: 28px !important;
+        font-size: 40px !important;
     }
     .the-card{
         width: 46%;
@@ -646,6 +850,107 @@ div.input-field .select-wrapper li span{
     .link-card{
         width: 92%;
         height: 92%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 78% 22%;
+    }
+    .title-card{
+        font-size: 28px;
+        overflow: hidden;
+    }
+    .icon-card{
+        padding:8px;
+    }
+    .icon-card i{
+        font-size: 28px !important;
+    }
+    .info-date{
+        width: 90%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 18% 14% 22% 1fr;
+    }
+    .title-info span{
+        font-size: 24px !important;
+    }
+    .raiting-info{
+        font-size: 20px;
+    }
+    .raiting-info span{
+        font-size: 20px;
+    }
+    .raiting-info i{
+        font-size: 20px !important;
+    }
+    .card-tag{
+        height: 30%;
+        font-size: 18px;
+        margin: 2px;
+    }
+    .card-tag2{
+        height: 30%;
+        font-size: 18px;
+        margin: 2px;
+    }
+    .description-info{
+        text-align:justify;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .icon-info{
+        padding: 8px;
+    }
+    .icon-info i{
+        font-size: 22px !important;
+    }
+    /* section tag of the section preview card */
+    .chip{
+        height: 30% !important;
+        margin: 2px !important;
+        font-size: 26px !important;
+    }
+    /* new section of the anime preview 2 */
+    .content2_2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 26% 1fr;
+    }
+    .conternt-img-header{
+        left: 2%;
+        bottom: -100%;
+        width: 30%;
+        height: 150%;
+    }
+    .content2_2-cont{
+        display: grid;
+        grid-template-columns: 34% 1fr;
+        grid-template-rows: 12% 14% 24% 1fr;
+    }
+    .cont-title{    
+        font-size: 28px;
+    }
+    .cont-description span{
+        font-size: 19px;
+    }
+    .title-chapter{
+        font-size: 24px;
+    }
+    .chapters{
+        width: 96%;
+        height: 96%;
+    }
+    .chapter{
+        width: 90%;
+        height: 28%;
+        display: grid;
+        grid-template-columns: 24% 80%;
+        grid-template-rows: 1fr;
+    }
+    .img-chapter{
+        background-size: 80% 90%;
+    }
+    .title-chapter{
+        font-size: 22px;
     }
 }
 /* property display none */
